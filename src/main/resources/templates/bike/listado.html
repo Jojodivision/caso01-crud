@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{general/fragmentos :: head}">
+<head th:replace="~{general/plantilla :: head}">
     <title>Bikes</title>
 </head>
 <body>
-    <header th:replace="~{general/fragmentos :: header}"></header>
+    <header th:replace="~{general/plantilla :: header}"></header>
 
-    <section th:replace="~{bike/fragmentos :: botonCrear}"></section>
-    <section th:replace="~{bike/fragmentos :: listado}"></section>
+    <section th:replace="~{bike/plantilla :: botonCrear}"></section>
+    <section th:replace="~{bike/plantilla :: listado}"></section>
 
-    <footer th:replace="~{general/fragmentos :: footer}"></footer>
+    <footer th:replace="~{general/plantilla :: footer}"></footer>
 </body>
 </html>
