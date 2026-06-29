@@ -16,8 +16,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Service
 public class FirebaseStorageService {
-    
-    //Para ajustar esta clase utilice todo lo creado en tienda... su trabajo archivo json, su bukeck name y demás...
 
     //El BuketName es el <id_del_proyecto> + ".firebasestorage.app"
     final String BucketName = "tareas7.firebasestorage.app";
@@ -69,7 +67,7 @@ public class FirebaseStorageService {
         return url;
     }
 
-    //Método utilitario que convierte el archivo desde el equipo local del usuario a un archivo temporal en el servidor
+    //Método que convierte el archivo desde el equipo local del usuario a un archivo temporal en el servidor
     private File convertToFile(MultipartFile archivoLocalCliente) throws IOException {
         File tempFile = File.createTempFile("img", null);
         try (
@@ -80,7 +78,7 @@ public class FirebaseStorageService {
         return tempFile;
     }
 
-    //Método utilitario para obtener un string con ceros....
+    //Método para obtener un string con ceros
     private String sacaNumero(long id) {
         return String.format("%019d", id);
     }
